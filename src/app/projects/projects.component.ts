@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
+	home4DawgsUrl = 'https://home4dawgs.herokuapp.com'
 
   constructor() { }
 

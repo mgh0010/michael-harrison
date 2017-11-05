@@ -1,6 +1,6 @@
 <!-- SideNav that collapses on med and small -->
 <ul class="side-nav fixed grey z-depth-2" id="mobile-demo">
-  <li class="grey darken-4 z-depth-2"><h4 id="logo-txt" class="center grey-text text-lighten-4">Michael Harrison</h4></li>
+  <li class="grey darken-4 z-depth-2"><h4 id="logo-txt" class="center grey-text text-lighten-2">Michael Harrison</h4></li>
   <!-- Need Two of each because links should hide side-nav on mobile screen once pressed but not on large screens where side-nav should always be visible -->
   <li><a class="waves-effect hide-on-med-and-down" href="/#/about-me">About Me</a></li>
   <li><a onclick="$('.button-collapse').sideNav('hide');" class="waves-effect hide-on-large-only" href="/#/about-me">About Me</a></li>
@@ -16,7 +16,7 @@
 <div class="navbar-fixed">
   <nav> 
     <div class="nav-wrapper">
-        <a href="#" class="brand-logo">
+        <a href="#" class="brand-logo grey-text text-darken-4">
               Michael Harrison
         </a>
         <div class="right">
@@ -43,12 +43,13 @@
 </div>
 
 <!-- Content that is changed on demand -->
-  <div class="row">
-    <div class="col l8 push-l4">
-      <router-outlet></router-outlet>
-      <!-- Optional: Service if you have any exceptional service like university or community leadership -->
+<div class="row">
+  <div class="col l8 push-l4 m12">
+    <router-outlet></router-outlet>
+    <!-- Optional: Service if you have any exceptional service like university or community leadership -->
 
-      <!-- Optional: Outreach if you have done K-12 our peer outreach during recent years -->
+    <!-- Optional: Outreach if you have done K-12 our peer outreach during recent years -->
 
-    </div>
+  </div>
+</div>
 
