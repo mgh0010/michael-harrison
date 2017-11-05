@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-me.component.css']
 })
 export class AboutMeComponent implements OnInit {
-	myImageUrl = '/assets/media/myself1.jpg';
+	myImageUrl1 = '/assets/media/myself1.jpg';
+	myImageUrl2 = '/assets/media/myself3.jpg';
 
   constructor() { }
 
