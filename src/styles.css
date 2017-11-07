@@ -17,6 +17,10 @@
 	background: rgba(0,0,0,.3);
 }
 
-a {
-	color: #83E9F8;
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+	color: #ee6e73;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover {
+    color: #ffd8a6;
 }

@@ -37,3 +37,30 @@ nav ul a {
 .pc-about-me {
 	height: 80em;
 }
+
+/* You can add global styles to this file, and also import other style files */
+.section-header-row {
+	margin-bottom: .5em;
+	text-align: center;
+}
+
+.divider {
+	background: #212121;
+	margin-bottom: .8em;
+}
+
+.card-panel {
+	background: rgba(0,0,0,.3);
+}
+
+.card {
+	background: rgba(0,0,0,.3);
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+	color: #ee6e73;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover {
+    color: #ffd8a6;
+}
