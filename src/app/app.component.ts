@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+	// bgUrl = "/assets/media/bg2.jpg";
+	bgUrl = "/assets/media/cool.jpg";
 }

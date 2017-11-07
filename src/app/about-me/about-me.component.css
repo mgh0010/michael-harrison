@@ -3,13 +3,10 @@
 }
 
 #me-img {
-	margin-top: .5em;
+	margin-top: 5em;
 }
 
 .card-panel {
 	background: rgba(0,0,0,.3);
 }
 
-.extra-space-row-bottom {
-	padding-bottom: 10em;
-}

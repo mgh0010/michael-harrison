@@ -1,14 +1,15 @@
 <!-- SideNav that collapses on med and small -->
-<ul class="side-nav fixed grey z-depth-2" id="mobile-demo">
-  <li class="grey darken-4 z-depth-2"><h4 id="logo-txt" class="center grey-text text-lighten-2">Michael Harrison</h4></li>
+<ul class="side-nav fixed " id="mobile-demo">
+  <li class="grey darken-4 hide-on-large-only"><h4 class="center nav-bar-lh-l grey-text logo-txt text-lighten-2">Michael Harrison</h4></li>
+  <li class="grey darken-4 nav-bar-lh-s-and-m hide-on-med-and-down"><h4 class="center nav-bar-lh-l grey-text logo-txt text-lighten-2">Michael Harrison</h4></li>
   <!-- Need Two of each because links should hide side-nav on mobile screen once pressed but not on large screens where side-nav should always be visible -->
-  <li><a class="waves-effect hide-on-med-and-down" href="/#/about-me">About Me</a></li>
+  <li><a class="grey-text text-lighten-2 waves-effect hide-on-med-and-down" href="/#/about-me">About Me</a></li>
   <li><a onclick="$('.button-collapse').sideNav('hide');" class="waves-effect hide-on-large-only" href="/#/about-me">About Me</a></li>
-  <li><a class="waves-effect hide-on-med-and-down" href="/#/resume">Resume</a></li>
+  <li><a class="grey-text text-lighten-2 waves-effect hide-on-med-and-down" href="/#/resume">Resume</a></li>
   <li><a onclick="$('.button-collapse').sideNav('hide');" class="waves-effect hide-on-large-only" href="/#/resume">Resume</a></li>
-  <li><a class="waves-effect hide-on-med-and-down" href="/#/projects">Projects</a></li>
+  <li><a class="grey-text text-lighten-2 waves-effect hide-on-med-and-down" href="/#/projects">Projects</a></li>
   <li><a onclick="$('.button-collapse').sideNav('hide');" class="waves-effect hide-on-large-only" href="/#/projects">Projects</a></li>
-  <li><a class="waves-effect hide-on-med-and-down" href="/#/contact-me">Contact Me</a></li>
+  <li><a class="grey-text text-lighten-2 waves-effect hide-on-med-and-down" href="/#/contact-me">Contact Me</a></li>
   <li><a onclick="$('.button-collapse').sideNav('hide');" class="waves-effect hide-on-large-only" href="/#/contact-me">Contact Me</a></li>
 </ul>
 
@@ -42,12 +43,35 @@
 </div>
 
 <!-- Content that is changed on demand -->
-<div class="row">
-  <div class="offset-content">
-    <router-outlet></router-outlet>
-    <!-- Optional: Service if you have any exceptional service like university or community leadership -->
+  <div class="parallax-container pc-about-me">
+    <div class="parallax"><img [src]='bgUrl'></div>
+    <div class="offset-content">
+      <router-outlet></router-outlet>
+      <!-- Optional: Service if you have any exceptional service like university or community leadership -->
 
-    <!-- Optional: Outreach if you have done K-12 our peer outreach during recent years -->
+      <!-- Optional: Outreach if you have done K-12 our peer outreach during recent years -->
+    </div>
   </div>
-</div>
+
+<footer class="page-footer grey darken-4">
+ <div class="container">
+   <div class="row">
+     <div class="col l6 s12">
+       <h5 class="white-text">Footer Content</h5>
+       <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+     </div>
+     <div class="col l4 offset-l2 s12">
+       <h5 class="white-text">Links</h5>
+       <ul>
+         <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+       </ul>
+     </div>
+   </div>
+ </div>
+ <div class="footer-copyright">
+   <div class="container">
+   © 2017 Copyright Text
+   </div>
+ </div>
+</footer>
 

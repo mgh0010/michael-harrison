@@ -1,8 +1,10 @@
-#logo-txt {
+.logo-txt {
 	margin: 0;
 	font-size: 2em;
-	padding-top: .8em;
-	padding-bottom: .7em;
+}
+
+.nav-bar-lh-l {
+	line-height: 64px;
 }
 
 /*makes the icons a hover fit in nav bar*/
@@ -26,4 +28,12 @@ nav ul a {
 
 .nav-wrapper {
 	background: #212121;
+}
+
+.side-nav {
+	background: rgba(0,0,0,.3);
+}
+
+.pc-about-me {
+	height: 80em;
 }
