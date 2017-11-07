@@ -1,5 +1,7 @@
 <!-- An Home* or “About Me” section with your photo and a brief description of your background and career goals (including a professional picture/headshot). -->
-<div class="row section-header-row">
+<div class="parallax-container">
+  <div class="parallax"><img [src]='bgUrl'></div>
+  <div class="row section-header-row">
 	<div class="col s12">
 		<h4 class="grey-text text-darken-4">
 		  About Me
@@ -10,23 +12,23 @@
 <div class="divider"></div>
 
 <div class="row">
-	<div class="col s12 m9">
-		<div class="card-panel hoverable blue-grey darken-1 grey-text text-lighten-4">
-			<p>lorem ipsum blah blah blah</p>
-		</div>
-	</div>
-	<div class="col s12 m3">
-		<img class="responsive-img" [src]='myImageUrl1'>
-	</div>
-</div>
-<div class="row">
-	<div class="col s12 m9">
-		<div class="card-panel hoverable blue-grey darken-1 grey-text text-lighten-4">
-			<p>lorem ipsum blah blah blah</p>
-		</div>
-	</div>
-	<div class="col s12 m3">
-		<img class="responsive-img" [src]='myImageUrl2'>
-	</div>
 </div>
 
+<div class="row">
+	<div class="col s12 m3 push-m1 center">
+		<img class="responsive-img" id='me-img' [src]='myImageUrl2'>
+	</div>
+	<div class="col s12 m7 push-m1">
+		<div class="card-panel hoverable grey-text text-lighten-4">
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+		</div>
+	</div>
+</div>
+<div class="row ">
+	<div class="col s12 m10 push-m1">
+		<div class="card-panel hoverable grey-text text-lighten-4 extra-space-row-bottom">
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+		</div>
+	</div>
+</div>
+</div>

@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class AboutMeComponent implements OnInit {
 	myImageUrl1 = '/assets/media/myself1.jpg';
 	myImageUrl2 = '/assets/media/myself3.jpg';
+	bgUrl = "/assets/media/bg2.jpg";
 
   constructor() { }
 

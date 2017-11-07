@@ -12,5 +12,18 @@ nav ul a {
 }
 
 .fa {
-	color: black;
+}
+
+.offset-content {
+	margin-left: 300px;
+}
+
+@media only screen and (max-width: 992px){
+	.offset-content {
+		margin-left: 0px;
+	}
+}
+
+.nav-wrapper {
+	background: #212121;
 }
