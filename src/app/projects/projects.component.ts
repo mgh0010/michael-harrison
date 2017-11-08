@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 	home4DawgsUrl = 'https://home4dawgs.herokuapp.com'
+	phfUrl = 'https://github.com/mgh0010/phf'
 
   constructor() { }
 
