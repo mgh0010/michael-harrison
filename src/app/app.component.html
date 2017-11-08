@@ -1,15 +1,29 @@
 <!-- SideNav that collapses on med and small -->
 <ul class="side-nav fixed " id="mobile-demo">
   <li class="grey darken-4 hide-on-large-only"><p class="nav-bar-lh-m-and-s grey-text logo-txt text-lighten-2">Michael Harrison</p></li>
-  <li class="grey darken-4 nav-bar-lh-s-and-m hide-on-med-and-down"><h4 class="nav-bar-lh-l grey-text logo-txt text-lighten-2">Michael Harrison</h4></li>
+  <li class="grey darken-4 nav-bar-lh-s-and-m hide-on-med-and-down"><h4 class="nav-bar-lh-l grey-text logo-txt text-lighten-2 scale-transition"
+    [ngClass]="{'scale-in': mhShouldFadeIn, 'scale-out': !mhShouldFadeIn}"
+    >Michael Harrison</h4></li>
   <!-- Need Two of each because links should hide side-nav on mobile screen once pressed but not on large screens where side-nav should always be visible -->
-  <li><a class="grey-text text-lighten-3 waves-effect waves-teal hide-on-med-and-down" href="/#/about-me">About Me</a></li>
+  <li class="scale-transition" 
+  [ngClass]="{'scale-in': aboutMeShouldFadeIn, 'scale-out': !aboutMeShouldFadeIn}">
+    <a class="grey-text text-lighten-3 waves-effect waves-teal hide-on-med-and-down" 
+    href="/#/about-me">About Me</a></li>
   <li><a onclick="$('.button-collapse').sideNav('hide');" class="grey-text text-lighten-3 waves-effect hide-on-large-only" href="/#/about-me">About Me</a></li>
-  <li><a class="grey-text text-lighten-3 waves-effect waves-green hide-on-med-and-down" href="/#/resume">Resume</a></li>
+  <li class="scale-transition" 
+    [ngClass]="{'scale-in': resumeShouldFadeIn, 'scale-out': !resumeShouldFadeIn}"
+  ><a class="grey-text text-lighten-3 waves-effect waves-green hide-on-med-and-down" 
+    href="/#/resume">Resume</a></li>
   <li><a onclick="$('.button-collapse').sideNav('hide');" class="grey-text text-lighten-3 waves-effect hide-on-large-only" href="/#/resume">Resume</a></li>
-  <li><a class="grey-text text-lighten-3 waves-effect waves-red hide-on-med-and-down" href="/#/projects">Projects</a></li>
+  <li class="scale-transition" 
+    [ngClass]="{'scale-in': projectsShouldFadeIn, 'scale-out': !projectsShouldFadeIn}"
+  ><a class="grey-text text-lighten-3 waves-effect waves-red hide-on-med-and-down" 
+    href="/#/projects">Projects</a></li>
   <li><a onclick="$('.button-collapse').sideNav('hide');" class="grey-text text-lighten-3 waves-effect hide-on-large-only" href="/#/projects">Projects</a></li>
-  <li><a class="grey-text text-lighten-3 waves-effect waves-orange hide-on-med-and-down" href="/#/contact-me">Contact Me</a></li>
+  <li class="scale-transition" 
+    [ngClass]="{'scale-in': contactMeShouldFadeIn, 'scale-out': !contactMeShouldFadeIn}"
+  ><a class="grey-text text-lighten-3 waves-effect waves-orange hide-on-med-and-down" 
+    href="/#/contact-me">Contact Me</a></li>
   <li><a onclick="$('.button-collapse').sideNav('hide');" class="grey-text text-lighten-3 waves-effect hide-on-large-only" href="/#/contact-me">Contact Me</a></li>
 </ul>
 
@@ -27,15 +41,18 @@
           <!-- icons to social media in nav-bar -->
           <ul class="hide-on-med-and-down">
             <li><a class="light-text waves-effect" href="https://github.com/mgh0010" target="_blank">
-                  <i class="fa fa-github fa-lg" aria-hidden="true"></i></a></li>
+                  <i class="fa fa-github fa-lg scale-transition" 
+                  [ngClass]="{'scale-in': githubShouldFadeIn, 'scale-out': !githubShouldFadeIn}" aria-hidden="true"></i></a></li>
             <li><a class="light-text waves-effect" href="https://www.linkedin.com/in/michael-harrison-4116b073/" target="_blank">
-                  <i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+                  <i class="fa fa-linkedin fa-lg scale-transition" 
+                  [ngClass]="{'scale-in': linkedInShouldFadeIn, 'scale-out': !linkedInShouldFadeIn}" aria-hidden="true"></i></a></li>
             <li>
               <a class="light-text waves-effect" href="https://www.facebook.com/profile.php?id=708630027" target="_blank">
-                <i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></a>
-            </li>
+                <i class="fa fa-facebook-official fa-lg scale-transition" 
+                  [ngClass]="{'scale-in': facebookShouldFadeIn, 'scale-out': !facebookShouldFadeIn}" aria-hidden="true"></i></a></li>
             <li><a class="light-text waves-effect" href="https://www.instagram.com/___michaelson___/?hl=en" target="_blank">
-                  <i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a></li>
+                  <i class="fa fa-instagram fa-lg scale-transition" 
+                  [ngClass]="{'scale-in': instagramShouldFadeIn, 'scale-out': !instagramShouldFadeIn}" aria-hidden="true"></i></a></li>
           </ul>
         </div>
     </div>
