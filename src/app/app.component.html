@@ -1,37 +1,38 @@
 <!-- SideNav that collapses on med and small -->
 <ul class="side-nav fixed " id="mobile-demo">
-  <li class="grey darken-4 hide-on-large-only"><p class="nav-bar-lh-m-and-s grey-text logo-txt text-lighten-2">Michael Harrison</p></li>
-  <li class="grey darken-4 nav-bar-lh-s-and-m hide-on-med-and-down"><h4 class="nav-bar-lh-l grey-text logo-txt text-lighten-2 scale-transition"
+  <li class="grey darken-4 hide-on-large-only"><p class="nav-bar-lh grey-text logo-txt text-lighten-2">Michael Harrison</p></li>
+  <li class="grey darken-4 hide-on-med-and-down scale-transition"
     [ngClass]="{'scale-in': mhShouldFadeIn, 'scale-out': !mhShouldFadeIn}"
-    >Michael Harrison</h4></li>
+  ><a class="nav-bar-lh grey-text logo-txt text-lighten-2 waves-effect waves-red"
+      href="/#/about-me">Michael Harrison</a></li>
   <!-- Need Two of each because links should hide side-nav on mobile screen once pressed but not on large screens where side-nav should always be visible -->
   <li class="scale-transition" 
   [ngClass]="{'scale-in': aboutMeShouldFadeIn, 'scale-out': !aboutMeShouldFadeIn}">
-    <a class="grey-text text-lighten-3 waves-effect waves-teal hide-on-med-and-down" 
+    <a class="grey-text text-lighten-4 waves-effect waves-teal hide-on-med-and-down" 
     href="/#/about-me">About Me</a></li>
-  <li><a onclick="$('.button-collapse').sideNav('hide');" class="grey-text text-lighten-3 waves-effect hide-on-large-only" href="/#/about-me">About Me</a></li>
+  <li><a onclick="$('.button-collapse').sideNav('hide');" class="grey-text text-lighten-4 waves-effect waves-teal hide-on-large-only" href="/#/about-me">About Me</a></li>
   <li class="scale-transition" 
     [ngClass]="{'scale-in': resumeShouldFadeIn, 'scale-out': !resumeShouldFadeIn}"
-  ><a class="grey-text text-lighten-3 waves-effect waves-green hide-on-med-and-down" 
+  ><a class="grey-text text-lighten-4 waves-effect waves-green hide-on-med-and-down" 
     href="/#/resume">Resume</a></li>
-  <li><a onclick="$('.button-collapse').sideNav('hide');" class="grey-text text-lighten-3 waves-effect hide-on-large-only" href="/#/resume">Resume</a></li>
+  <li><a onclick="$('.button-collapse').sideNav('hide');" class="grey-text text-lighten-4 waves-effect waves-green hide-on-large-only" href="/#/resume">Resume</a></li>
   <li class="scale-transition" 
     [ngClass]="{'scale-in': projectsShouldFadeIn, 'scale-out': !projectsShouldFadeIn}"
-  ><a class="grey-text text-lighten-3 waves-effect waves-red hide-on-med-and-down" 
+  ><a class="grey-text text-lighten-4 waves-effect waves-red hide-on-med-and-down" 
     href="/#/projects">Projects</a></li>
-  <li><a onclick="$('.button-collapse').sideNav('hide');" class="grey-text text-lighten-3 waves-effect hide-on-large-only" href="/#/projects">Projects</a></li>
+  <li><a onclick="$('.button-collapse').sideNav('hide');" class="grey-text text-lighten-4 waves-effect waves-red hide-on-large-only" href="/#/projects">Projects</a></li>
   <li class="scale-transition" 
     [ngClass]="{'scale-in': contactMeShouldFadeIn, 'scale-out': !contactMeShouldFadeIn}"
-  ><a class="grey-text text-lighten-3 waves-effect waves-orange hide-on-med-and-down" 
+  ><a class="grey-text text-lighten-4 waves-effect waves-orange hide-on-med-and-down" 
     href="/#/contact-me">Contact Me</a></li>
-  <li><a onclick="$('.button-collapse').sideNav('hide');" class="grey-text text-lighten-3 waves-effect hide-on-large-only" href="/#/contact-me">Contact Me</a></li>
+  <li><a onclick="$('.button-collapse').sideNav('hide');" class="grey-text text-lighten-4 waves-effect waves-orange hide-on-large-only" href="/#/contact-me">Contact Me</a></li>
 </ul>
 
 <!-- Navbar across top -->
 <div class="navbar-fixed">
   <nav> 
     <div class="nav-wrapper">
-        <div class="right icon-div">
+        <div class="right">
           <!-- opens side-nav on med and down -->
           <ul class="hide-on-large-only">
             <li>
@@ -60,7 +61,7 @@
 </div>
 
 <!-- Content that is changed on demand -->
-  <div class="parallax-container pc-about-me">
+  <div class="parallax-container pc1">
     <div class="parallax"><img [src]='bgUrl'></div>
     <div class="offset-content">
       <router-outlet></router-outlet>
@@ -70,10 +71,10 @@
     </div>
   </div>
 
-<footer class="page-footer grey darken-4">
+<footer class="page-footer">
   <div class="offset-content">
      <div class="container">
-       <div class="row">
+       <div class="row lol">
          <div class="col s10 push-s1 m5 push-m7">
           <div class="collection hide-on-large-only">
             <a class="light-text waves-effect waves-teal collection-item" href="https://github.com/mgh0010" target="_blank"> <span class="grey-text text-lighten-4">Github</span> 

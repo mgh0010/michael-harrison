@@ -3,24 +3,16 @@
 	font-size: 1.7em;
 }
 
-.nav-bar-lh-l {
-	line-height: 64px;
+.nav-bar-lh {
 	padding-left: 32px;
-}
-
-.nav-bar-lh-m-and-s {
-	line-height: 64px;
-	padding-left: 16px;
+	height: 64px;
+	padding-top: 8px;
 }
 
 /*makes the icons a hover fit in nav bar*/
 /*changed form display: block;*/
 nav ul a {
 	display: grid;
-}
-
-.icon-div {
-	padding-right: 32px;
 }
 
 .offset-content {
@@ -42,8 +34,13 @@ nav ul a {
 	margin-bottom: 200px;
 }
 
-.pc-about-me {
-	height: 95em;
+.pc1 {
+	height: 140em;
+}
+
+.pc2 {
+	height: 20em;
+	z-index: -99;
 }
 
 /* You can add global styles to this file, and also import other style files */
@@ -78,5 +75,7 @@ nav ul a {
 }
 
 .page-footer {
-	z-index: 997;
+	background-image: url("/assets/media/lol.jpg") ;
 }
+
+

@@ -9,6 +9,8 @@ export class AppComponent {
   title = 'app';
 	// bgUrl = "/assets/media/bg2.jpg";
 	bgUrl = "/assets/media/cool.jpg";
+  bgUrl2 = "/assets/media/cool2.jpg";
+  bgUrl3 = "/assets/media/cool3.jpg";
 	githubShouldFadeIn = false;
 	facebookShouldFadeIn = false;
 	linkedInShouldFadeIn = false;
@@ -25,10 +27,10 @@ export class AppComponent {
   }
 
   fadeInIcons() {
-  	this.githubShouldFadeIn = true;
-  	setTimeout(()=>{this.linkedInShouldFadeIn = true;}, 30);
-  	setTimeout(()=>{this.facebookShouldFadeIn = true;}, 60);
-  	setTimeout(()=>{this.instagramShouldFadeIn = true;}, 90);
+    setTimeout(()=>{this.githubShouldFadeIn = true;}, 600);
+  	setTimeout(()=>{this.linkedInShouldFadeIn = true;}, 630);
+  	setTimeout(()=>{this.facebookShouldFadeIn = true;}, 660);
+  	setTimeout(()=>{this.instagramShouldFadeIn = true;}, 690);
   }
 
   fadeInSideNav() {
