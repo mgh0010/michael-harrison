@@ -4,6 +4,16 @@
 	text-align: center;
 }
 
+.offset-content {
+	margin-left: 300px;
+}
+
+@media only screen and (max-width: 992px){
+	.offset-content {
+		margin-left: 0px;
+	}
+}
+
 .divider {
 	background: #212121;
 	margin-bottom: .8em;
@@ -23,4 +33,8 @@
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover {
     color: #ffd8a6;
+}
+
+.last-row {
+	margin-bottom: 0;
 }

@@ -5,3 +5,8 @@
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover {
     color: #ffd8a6;
 }
+
+.par {
+	height: 1100px;
+	background-image: url("/assets/media/cool.jpg");
+}

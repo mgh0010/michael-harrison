@@ -8,7 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
 	// bgUrl = "/assets/media/bg2.jpg";
-	bgUrl = "/assets/media/cool.jpg";
   bgUrl2 = "/assets/media/cool2.jpg";
   bgUrl3 = "/assets/media/cool3.jpg";
 	githubShouldFadeIn = false;

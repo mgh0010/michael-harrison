@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {Routes, RouterModule} from "@angular/router";
+import { Parallax, ParallaxConfig } from 'ngx-parallax';
 
 import { AppComponent } from './app.component';
 import { AboutMeComponent } from './about-me/about-me.component';
@@ -23,6 +24,7 @@ const routes: Routes = [
     ResumeComponent,
     ProjectsComponent,
     ContactMeComponent,
+    Parallax,
   ],
   imports: [
     BrowserModule,
