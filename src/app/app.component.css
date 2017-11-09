@@ -38,11 +38,6 @@ nav ul a {
 	height: 149em;
 }
 
-.pc2 {
-	height: 20em;
-	z-index: -99;
-}
-
 /* You can add global styles to this file, and also import other style files */
 .section-header-row {
 	margin-bottom: .5em;
