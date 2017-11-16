@@ -16,6 +16,7 @@ export class AppComponent {
 	resumeShouldFadeIn = false;
 	projectsShouldFadeIn = false;
 	contactMeShouldFadeIn = false;
+  youtubeShouldFadeIn = false;
 
   ngOnInit() {
   	setTimeout(()=>{this.fadeInIcons()}, 500);
@@ -27,6 +28,7 @@ export class AppComponent {
   	setTimeout(()=>{this.linkedInShouldFadeIn = true;}, 630);
   	setTimeout(()=>{this.facebookShouldFadeIn = true;}, 660);
   	setTimeout(()=>{this.instagramShouldFadeIn = true;}, 690);
+    setTimeout(()=>{this.youtubeShouldFadeIn = true;}, 720);
   }
 
   fadeInSideNav() {
