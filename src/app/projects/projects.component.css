@@ -10,3 +10,9 @@
 	height: 650px;
 	background-image: url("/assets/media/cool.jpg");
 }
+
+.card-title {
+	color: white;
+	font-size: x-large;
+}
+
