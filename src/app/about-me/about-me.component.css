@@ -10,11 +10,6 @@
 	background: rgba(0,0,0,.3);
 }
 
-.par {
-	height: 650px;
-	background-image: url("/assets/media/cool.jpg");
-}
-
 p {
 	font-size: large;
 }

@@ -42,3 +42,11 @@ p {
 .last-row {
 	margin-bottom: 0;
 }
+
+.par {
+	background-image: url("/assets/media/cool.jpg");
+	height: 650px;
+}
+.par2 {
+	background-image: url("/assets/media/cool2.jpg");
+}
