@@ -49,4 +49,5 @@ p {
 }
 .par2 {
 	background-image: url("/assets/media/cool2.jpg");
+	min-height: 500px;
 }
